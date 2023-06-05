@@ -1,0 +1,76 @@
+﻿<Window x:Class="CogenerationPlantSim.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        ResizeMode="CanMinimize"
+        Title="Cogeneration plant simulation" Height="450" Width="800">
+    <Grid>
+        <Grid.Resources>
+            <Style TargetType="Border">
+                <Setter Property="CornerRadius" Value="8" />
+                <Setter Property="Margin" Value="5,5,5,5" />
+                <Setter Property="Padding" Value="5,5,5,5" />
+                <Setter Property="BorderBrush" Value="Black" />
+                <Setter Property="BorderThickness" Value="1" />
+                <Setter Property="Effect">
+                    <Setter.Value>
+                        <DropShadowEffect ShadowDepth="3" Opacity="0.2" />
+                    </Setter.Value>
+                </Setter>
+            </Style>
+        </Grid.Resources>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Border Grid.Column="0">
+            <StackPanel Margin="3">
+                <Label Content="Card readings" FontSize="20" />
+                <Separator Height="5" BorderThickness="5" BorderBrush="Black" />
+
+                <StackPanel>
+                    <Label Content="Network port" FontSize="14" />
+                    <TextBox Width="auto" Height="30" FontSize="14"
+                             Text="{Binding 
+                    Path=NetworkPort}" />
+                </StackPanel>
+                <Separator Height="5" />
+
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                    <Button Width="100" Height="50" Content="{Binding Path=ConnectButtonContent}" FontSize="15"
+                            Click="OnConnectButtonClicked" />
+                </StackPanel>
+
+                <StackPanel>
+                    <Label Content="Card number" FontSize="14" />
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+
+                        <TextBox Grid.Column="0" Width="225" Padding="0,0,0,0" Text="{Binding Path=CardNumber}"
+                                 Height="30" FontSize="14" />
+                        <Button Grid.Column="1" Width="20" Height="20" Margin="-40,0,0,0"
+                                Click="OnGenerateNumberButtonClicked" />
+                    </Grid>
+                </StackPanel>
+                <Separator Height="5" />
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                    <Button Width="100" Height="50" Content="Send number" FontSize="15"
+                            Click="OnSendNumberButtonClicked" />
+                </StackPanel>
+
+
+            </StackPanel>
+        </Border>
+        <Border Grid.Column="1" />
+        <Border Grid.Column="2" />
+    </Grid>
+
+</Window>

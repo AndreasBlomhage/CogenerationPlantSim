@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CogenerationPlantSim", "CogenerationPlantSim\CogenerationPlantSim.csproj", "{1E72CE5C-B279-440F-9EEA-A7A7EBD2FFC3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{0CF6955D-5A3B-420E-B63F-895863DFA733}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CardNumberTests", "CardNumberTests\CardNumberTests.csproj", "{3C6484F2-AF59-415B-9950-D4E91E4E1870}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1E72CE5C-B279-440F-9EEA-A7A7EBD2FFC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E72CE5C-B279-440F-9EEA-A7A7EBD2FFC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E72CE5C-B279-440F-9EEA-A7A7EBD2FFC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E72CE5C-B279-440F-9EEA-A7A7EBD2FFC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C6484F2-AF59-415B-9950-D4E91E4E1870}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C6484F2-AF59-415B-9950-D4E91E4E1870}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C6484F2-AF59-415B-9950-D4E91E4E1870}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C6484F2-AF59-415B-9950-D4E91E4E1870}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3C6484F2-AF59-415B-9950-D4E91E4E1870} = {0CF6955D-5A3B-420E-B63F-895863DFA733}
+	EndGlobalSection
+EndGlobal
